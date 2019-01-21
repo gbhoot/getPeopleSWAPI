@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB049FDB2194AE7200EFBC76 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB049FDA2194AE7200EFBC76 /* DetailsVC.swift */; };
+		FB633B2B21936CC400B160A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B2A21936CC400B160A8 /* AppDelegate.swift */; };
+		FB633B2D21936CC400B160A8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B2C21936CC400B160A8 /* MainVC.swift */; };
+		FB633B3021936CC400B160A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB633B2E21936CC400B160A8 /* Main.storyboard */; };
+		FB633B3221936CC600B160A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB633B3121936CC600B160A8 /* Assets.xcassets */; };
+		FB633B3521936CC600B160A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB633B3321936CC600B160A8 /* LaunchScreen.storyboard */; };
+		FB633B4021936CC600B160A8 /* GETPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B3F21936CC600B160A8 /* GETPeopleTests.swift */; };
+		FB633B4B21936CC600B160A8 /* GETPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B4A21936CC600B160A8 /* GETPeopleUITests.swift */; };
+		FB633B5E21937DF200B160A8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B5D21937DF200B160A8 /* DataService.swift */; };
+		FB633B6021937E6C00B160A8 /* StarWarsCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B5F21937E6C00B160A8 /* StarWarsCharacter.swift */; };
+		FB633B622193860400B160A8 /* SWAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B612193860400B160A8 /* SWAPIService.swift */; };
+		FB633B642193863C00B160A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B632193863C00B160A8 /* Constants.swift */; };
+		FB633B662193AC3100B160A8 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB633B652193AC3100B160A8 /* CharacterCell.swift */; };
+		FBA66CEC2193FD5500F52DE2 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA66CEB2193FD5500F52DE2 /* SplashVC.swift */; };
+		FBA66CEE21940A2C00F52DE2 /* StarWarsFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA66CED21940A2C00F52DE2 /* StarWarsFilm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB633B3C21936CC600B160A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB633B1F21936CC400B160A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB633B2621936CC400B160A8;
+			remoteInfo = GETPeople;
+		};
+		FB633B4721936CC600B160A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB633B1F21936CC400B160A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB633B2621936CC400B160A8;
+			remoteInfo = GETPeople;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB049FDA2194AE7200EFBC76 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		FB633B2721936CC400B160A8 /* GETPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GETPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB633B2A21936CC400B160A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB633B2C21936CC400B160A8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FB633B2F21936CC400B160A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB633B3121936CC600B160A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB633B3421936CC600B160A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB633B3621936CC600B160A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB633B3B21936CC600B160A8 /* GETPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GETPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB633B3F21936CC600B160A8 /* GETPeopleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETPeopleTests.swift; sourceTree = "<group>"; };
+		FB633B4121936CC600B160A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB633B4621936CC600B160A8 /* GETPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GETPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB633B4A21936CC600B160A8 /* GETPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETPeopleUITests.swift; sourceTree = "<group>"; };
+		FB633B4C21936CC600B160A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB633B5D21937DF200B160A8 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FB633B5F21937E6C00B160A8 /* StarWarsCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacter.swift; sourceTree = "<group>"; };
+		FB633B612193860400B160A8 /* SWAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIService.swift; sourceTree = "<group>"; };
+		FB633B632193863C00B160A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB633B652193AC3100B160A8 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		FBA66CEB2193FD5500F52DE2 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		FBA66CED21940A2C00F52DE2 /* StarWarsFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB633B2421936CC400B160A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB633B3821936CC600B160A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB633B4321936CC600B160A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB633B1E21936CC400B160A8 = {
+			isa = PBXGroup;
+			children = (
+				FB633B2921936CC400B160A8 /* GETPeople */,
+				FB633B3E21936CC600B160A8 /* GETPeopleTests */,
+				FB633B4921936CC600B160A8 /* GETPeopleUITests */,
+				FB633B2821936CC400B160A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB633B2821936CC400B160A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B2721936CC400B160A8 /* GETPeople.app */,
+				FB633B3B21936CC600B160A8 /* GETPeopleTests.xctest */,
+				FB633B4621936CC600B160A8 /* GETPeopleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB633B2921936CC400B160A8 /* GETPeople */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B5C21936CEC00B160A8 /* Service */,
+				FB633B5B21936CE500B160A8 /* Utilities */,
+				FB633B5A21936CE200B160A8 /* Model */,
+				FB633B5921936CDF00B160A8 /* View */,
+				FB633B5821936CDA00B160A8 /* Controller */,
+				FB633B2A21936CC400B160A8 /* AppDelegate.swift */,
+				FB633B2E21936CC400B160A8 /* Main.storyboard */,
+				FB633B3121936CC600B160A8 /* Assets.xcassets */,
+				FB633B3321936CC600B160A8 /* LaunchScreen.storyboard */,
+				FB633B3621936CC600B160A8 /* Info.plist */,
+			);
+			path = GETPeople;
+			sourceTree = "<group>";
+		};
+		FB633B3E21936CC600B160A8 /* GETPeopleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B3F21936CC600B160A8 /* GETPeopleTests.swift */,
+				FB633B4121936CC600B160A8 /* Info.plist */,
+			);
+			path = GETPeopleTests;
+			sourceTree = "<group>";
+		};
+		FB633B4921936CC600B160A8 /* GETPeopleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B4A21936CC600B160A8 /* GETPeopleUITests.swift */,
+				FB633B4C21936CC600B160A8 /* Info.plist */,
+			);
+			path = GETPeopleUITests;
+			sourceTree = "<group>";
+		};
+		FB633B5821936CDA00B160A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B2C21936CC400B160A8 /* MainVC.swift */,
+				FBA66CEB2193FD5500F52DE2 /* SplashVC.swift */,
+				FB049FDA2194AE7200EFBC76 /* DetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB633B5921936CDF00B160A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B652193AC3100B160A8 /* CharacterCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB633B5A21936CE200B160A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B5F21937E6C00B160A8 /* StarWarsCharacter.swift */,
+				FBA66CED21940A2C00F52DE2 /* StarWarsFilm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB633B5B21936CE500B160A8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B632193863C00B160A8 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FB633B5C21936CEC00B160A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FB633B5D21937DF200B160A8 /* DataService.swift */,
+				FB633B612193860400B160A8 /* SWAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB633B2621936CC400B160A8 /* GETPeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB633B4F21936CC600B160A8 /* Build configuration list for PBXNativeTarget "GETPeople" */;
+			buildPhases = (
+				FB633B2321936CC400B160A8 /* Sources */,
+				FB633B2421936CC400B160A8 /* Frameworks */,
+				FB633B2521936CC400B160A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GETPeople;
+			productName = GETPeople;
+			productReference = FB633B2721936CC400B160A8 /* GETPeople.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB633B3A21936CC600B160A8 /* GETPeopleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB633B5221936CC600B160A8 /* Build configuration list for PBXNativeTarget "GETPeopleTests" */;
+			buildPhases = (
+				FB633B3721936CC600B160A8 /* Sources */,
+				FB633B3821936CC600B160A8 /* Frameworks */,
+				FB633B3921936CC600B160A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB633B3D21936CC600B160A8 /* PBXTargetDependency */,
+			);
+			name = GETPeopleTests;
+			productName = GETPeopleTests;
+			productReference = FB633B3B21936CC600B160A8 /* GETPeopleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB633B4521936CC600B160A8 /* GETPeopleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB633B5521936CC600B160A8 /* Build configuration list for PBXNativeTarget "GETPeopleUITests" */;
+			buildPhases = (
+				FB633B4221936CC600B160A8 /* Sources */,
+				FB633B4321936CC600B160A8 /* Frameworks */,
+				FB633B4421936CC600B160A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB633B4821936CC600B160A8 /* PBXTargetDependency */,
+			);
+			name = GETPeopleUITests;
+			productName = GETPeopleUITests;
+			productReference = FB633B4621936CC600B160A8 /* GETPeopleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB633B1F21936CC400B160A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gurpal Bhoot";
+				TargetAttributes = {
+					FB633B2621936CC400B160A8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FB633B3A21936CC600B160A8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FB633B2621936CC400B160A8;
+					};
+					FB633B4521936CC600B160A8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FB633B2621936CC400B160A8;
+					};
+				};
+			};
+			buildConfigurationList = FB633B2221936CC400B160A8 /* Build configuration list for PBXProject "GETPeople" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB633B1E21936CC400B160A8;
+			productRefGroup = FB633B2821936CC400B160A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB633B2621936CC400B160A8 /* GETPeople */,
+				FB633B3A21936CC600B160A8 /* GETPeopleTests */,
+				FB633B4521936CC600B160A8 /* GETPeopleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB633B2521936CC400B160A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB633B3521936CC600B160A8 /* LaunchScreen.storyboard in Resources */,
+				FB633B3221936CC600B160A8 /* Assets.xcassets in Resources */,
+				FB633B3021936CC400B160A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB633B3921936CC600B160A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB633B4421936CC600B160A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB633B2321936CC400B160A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB633B5E21937DF200B160A8 /* DataService.swift in Sources */,
+				FB633B2D21936CC400B160A8 /* MainVC.swift in Sources */,
+				FB633B6021937E6C00B160A8 /* StarWarsCharacter.swift in Sources */,
+				FB633B662193AC3100B160A8 /* CharacterCell.swift in Sources */,
+				FB633B2B21936CC400B160A8 /* AppDelegate.swift in Sources */,
+				FBA66CEC2193FD5500F52DE2 /* SplashVC.swift in Sources */,
+				FB633B622193860400B160A8 /* SWAPIService.swift in Sources */,
+				FB633B642193863C00B160A8 /* Constants.swift in Sources */,
+				FBA66CEE21940A2C00F52DE2 /* StarWarsFilm.swift in Sources */,
+				FB049FDB2194AE7200EFBC76 /* DetailsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB633B3721936CC600B160A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB633B4021936CC600B160A8 /* GETPeopleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB633B4221936CC600B160A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB633B4B21936CC600B160A8 /* GETPeopleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB633B3D21936CC600B160A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB633B2621936CC400B160A8 /* GETPeople */;
+			targetProxy = FB633B3C21936CC600B160A8 /* PBXContainerItemProxy */;
+		};
+		FB633B4821936CC600B160A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB633B2621936CC400B160A8 /* GETPeople */;
+			targetProxy = FB633B4721936CC600B160A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB633B2E21936CC400B160A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB633B2F21936CC400B160A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB633B3321936CC600B160A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB633B3421936CC600B160A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB633B4D21936CC600B160A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB633B4E21936CC600B160A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB633B5021936CC600B160A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3CA5JK947;
+				INFOPLIST_FILE = GETPeople/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gbhoot.GETPeople;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB633B5121936CC600B160A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3CA5JK947;
+				INFOPLIST_FILE = GETPeople/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gbhoot.GETPeople;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB633B5321936CC600B160A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3CA5JK947;
+				INFOPLIST_FILE = GETPeopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gbhoot.GETPeopleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GETPeople.app/GETPeople";
+			};
+			name = Debug;
+		};
+		FB633B5421936CC600B160A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3CA5JK947;
+				INFOPLIST_FILE = GETPeopleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gbhoot.GETPeopleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GETPeople.app/GETPeople";
+			};
+			name = Release;
+		};
+		FB633B5621936CC600B160A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3CA5JK947;
+				INFOPLIST_FILE = GETPeopleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gbhoot.GETPeopleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GETPeople;
+			};
+			name = Debug;
+		};
+		FB633B5721936CC600B160A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3CA5JK947;
+				INFOPLIST_FILE = GETPeopleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gbhoot.GETPeopleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GETPeople;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB633B2221936CC400B160A8 /* Build configuration list for PBXProject "GETPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB633B4D21936CC600B160A8 /* Debug */,
+				FB633B4E21936CC600B160A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB633B4F21936CC600B160A8 /* Build configuration list for PBXNativeTarget "GETPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB633B5021936CC600B160A8 /* Debug */,
+				FB633B5121936CC600B160A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB633B5221936CC600B160A8 /* Build configuration list for PBXNativeTarget "GETPeopleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB633B5321936CC600B160A8 /* Debug */,
+				FB633B5421936CC600B160A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB633B5521936CC600B160A8 /* Build configuration list for PBXNativeTarget "GETPeopleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB633B5621936CC600B160A8 /* Debug */,
+				FB633B5721936CC600B160A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB633B1F21936CC400B160A8 /* Project object */;
+}
